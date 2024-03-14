@@ -1,11 +1,9 @@
 package Arrays;
 
 import java.util.HashMap;
-import java.util.Set;
 
 public class _0011_subarray_sum_equals_k {
     static int subarraySumEqualsK(int[] nums, int k) {
-        int n = nums.length;
         HashMap<Integer, Integer> map = new HashMap<>();
         int prefixSum = 0, count = 0;
 
@@ -25,8 +23,8 @@ public class _0011_subarray_sum_equals_k {
     }
 
     public static void main(String[] args) {
-        int[] nums = {1, 2, 3, -3, 1, 1, 1, 4, 2, -3};
-        int k = 3;
+        int[] nums = {1, 0, 1, 0, 1};
+        int k = 1;
 
         int result = subarraySumEqualsK(nums, k);
         System.out.println(result);
